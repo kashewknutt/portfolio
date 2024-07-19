@@ -42,3 +42,10 @@ hr {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for the about section */
     margin-top: 50px; /* Ensure it has some space from the home section */
 }
+
+#about .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Rounded image */
+    margin-bottom: 20px; /* Space below the image */
+}
