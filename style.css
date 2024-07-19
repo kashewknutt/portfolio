@@ -1,45 +1,44 @@
+/* style.css */
+
 body, html {
     height: 100%;
     margin: 0;
-    background-color: #2C3E50; /* Dark background */
-    color: #f5f5dc; /* Beige text */
-    font-family: 'Arial', sans-serif;
-}
-
-.navbar-dark .navbar-brand {
-    color: #f5f5dc; /* Beige text */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5dc; /* Beige background */
+    color: #2c3e50; /* Dark text color */
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #f5f5dc; /* Beige text */
+    color: white; /* White text for nav links */
 }
 
-#home {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2C3E50; /* Dark background */
-    color: #f5f5dc; /* Beige text */
+.container-fluid {
+    background-color: #2c3e50; /* Dark background for the home section */
+    color: white; /* White text color for the home section */
 }
 
-.jumbotron {
-    background-color: #34495e; /* Slightly lighter dark background */
-    color: #f5f5dc; /* Beige text */
-    padding: 2rem 1rem;
-    width: 100%;
+.text-center h1 img {
+    margin: 0 auto;
 }
 
-.jumbotron .display-4 img {
-    width: 100%;
+.text-center {
     max-width: 600px;
 }
 
-.btn-primary {
-    background-color: #8E44AD; /* Dark purple */
-    border: none;
+hr {
+    border-top: 1px solid white; /* White color for the horizontal rule */
 }
 
-.btn-primary:hover {
-    background-color: #732d91; /* Darker purple */
+.btn-primary {
+    background-color: #89CFF0; /* Light blue button */
+    border-color: #89CFF0; /* Matching border color */
+}
+
+#about {
+    background-color: #ffffff; /* White background for the about section */
+    color: #2c3e50; /* Dark text color */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for the about section */
+    margin-top: 50px; /* Ensure it has some space from the home section */
 }
