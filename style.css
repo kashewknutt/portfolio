@@ -3,13 +3,27 @@
 body, html {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5dc; /* Beige background */
     color: #2c3e50; /* Dark text color */
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays above other content */
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white; /* White text for nav links */
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #89CFF0;
 }
 
 .container-fluid {
@@ -48,4 +62,71 @@ hr {
     height: auto;
     border-radius: 50%; /* Rounded image */
     margin-bottom: 20px; /* Space below the image */
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-info {
+    max-width: 80%;
+    text-align: center;
+    position: relative;
+    float: center;
+}
+
+.project-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.project-info a:hover {
+    background-color: #0056b3;
+    text-align: center;
 }
