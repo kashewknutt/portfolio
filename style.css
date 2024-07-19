@@ -1,85 +1,45 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    background-color: #2C3E50; /* Dark background */
+    color: #f5f5dc; /* Beige text */
+    font-family: 'Arial', sans-serif;
 }
 
-/* Navbar Styles */
-.navbar {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.navbar-dark .navbar-brand {
+    color: #f5f5dc; /* Beige text */
 }
 
-/* Jumbotron Styles */
+.navbar-dark .navbar-nav .nav-link {
+    color: #f5f5dc; /* Beige text */
+}
+
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C3E50; /* Dark background */
+    color: #f5f5dc; /* Beige text */
+}
+
 .jumbotron {
-    background-color: #ffffff;
-    border-radius: 0.3rem;
-    padding: 2rem 2rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+    background-color: #34495e; /* Slightly lighter dark background */
+    color: #f5f5dc; /* Beige text */
+    padding: 2rem 1rem;
+    width: 100%;
 }
 
-.jumbotron h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.jumbotron .display-4 img {
+    width: 100%;
+    max-width: 600px;
 }
 
-.jumbotron p.lead {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Section Styles */
-.container h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.container p {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-}
-
-/* Card Styles */
-.card {
+.btn-primary {
+    background-color: #8E44AD; /* Dark purple */
     border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Form Styles */
-.form-group label {
-    font-weight: bold;
-}
-
-.form-group input, 
-.form-group textarea {
-    border-radius: 0.3rem;
-    box-shadow: none;
-}
-
-button[type="submit"] {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.btn-primary:hover {
+    background-color: #732d91; /* Darker purple */
 }
